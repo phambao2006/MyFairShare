@@ -1,0 +1,135 @@
+﻿body {
+    background-color: #faf0e6;
+    display:block;
+}
+
+/* Style page content */
+.main {
+    width:100%;/* Same as the width of the sidebar */
+    background-color: #3CB371;
+    margin: 0px 100px 0px 0px;
+
+}
+
+#dollarVideo {
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+    z-index: -3;
+}
+
+.sidenavbar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.insidenavbar {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+
+.buttonINbar {
+    margin-bottom: 20px;
+}
+
+/* The navigation menu links */
+.sidenavbar asp {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenavbar asp:hover {
+  color: #f1f1f1;
+}
+
+#text-center {
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #98ff98;
+    padding: 10px;
+    height: 400px;
+    width: 650px;
+    margin-left: 350px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#text-center-frontpage {
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #98ff98;
+    padding: 10px;
+    height: 250px;
+    width: 500px;
+    margin-left: 350px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 3;
+}
+
+#selectquestion1 {
+    width: 96px;
+    margin-left: 6px;
+}
+
+.pageTitles {
+    margin-top: 0px;
+    background-color: #111;
+    text-align: center;
+    font-family: 'Noto Sans';
+    color: white;
+}
+
+.auto-style1 {
+    text-align: center;
+    padding:5px;
+   
+}
+
+.auto-style2 {
+    margin-left: auto;
+    margin-right: auto;
+    align-content:flex-start;
+}
+
+.removebtn {
+    position: absolute;
+    top: 210px;
+    right: 260px;
+}
+
+.addbtn {
+    position: absolute;
+    top: 270px;
+    right: 260px;
+}
+.billlist {
+    position: absolute;
+    top: 10px;
+    right:252px;
+}
+.selectedmemberlist {
+    position: absolute;
+    top: 183px;
+    right: 68px;
+}
+.memberlist {
+    position: absolute;
+    top: 183px;
+    right: 450px;
+}
