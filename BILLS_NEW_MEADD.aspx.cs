@@ -31,7 +31,7 @@ namespace myFairShare_WebApp
             }
         }
 
-        protected void btn_Logout(object sender, EventArgs e)
+        protected void btn_Logout(object sender, EventArgs e)// log out
         {
             FormsAuthentication.SignOut();
             FormsAuthentication.RedirectToLoginPage();

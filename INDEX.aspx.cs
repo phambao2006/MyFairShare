@@ -35,7 +35,7 @@ namespace myFairShare_WebApp
             if (Page.IsValid)
             {
                 Session["Accountinfo"] = new Account(id); // save id for future fetch
-                FormsAuthentication.RedirectFromLoginPage(txtBox_Username.Text,true);
+                FormsAuthentication.RedirectFromLoginPage(txtBox_Username.Text,true); // secure login 
             }
         }
 

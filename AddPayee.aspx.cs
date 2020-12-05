@@ -12,7 +12,7 @@ namespace myFairShare_WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if (!IsPostBack)// if page post back dont do this
             {
                 lbSelectedMember.DataTextField = "Member";
                 lbSelectedMember.DataValueField = "Memberid";
@@ -24,22 +24,22 @@ namespace myFairShare_WebApp
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)  // Click Add event
         {
             if (lbMembers.SelectedValue != "")
             {
-                Bill.AddPayee(Convert.ToInt32(lbMembers.SelectedValue), Convert.ToInt32(lbBills.SelectedValue));
-                lbBills_SelectedIndexChanged(Button1, EventArgs.Empty);
+                Bill.AddPayee(Convert.ToInt32(lbMembers.SelectedValue), Convert.ToInt32(lbBills.SelectedValue)); // add payee under the bill
+                lbBills_SelectedIndexChanged(Button1, EventArgs.Empty); // empty event helps rerendered
             }
         }
 
-        protected void lbBills_SelectedIndexChanged(object sender, EventArgs e)
+        protected void lbBills_SelectedIndexChanged(object sender, EventArgs e) 
         {
             Account a1 = (Account)Session["Accountinfo"];
 
-            lbSelectedMember.DataSource = Bill.SelectedMember(Convert.ToInt32(lbBills.SelectedValue));
+            lbSelectedMember.DataSource = Bill.SelectedMember(Convert.ToInt32(lbBills.SelectedValue)); // fetch data and bind it to selectmember listbox
             lbSelectedMember.DataBind();
-            lbMembers.DataSource = Bill.UnSelectedMember(a1.Id, Convert.ToInt32(lbBills.SelectedValue));
+            lbMembers.DataSource = Bill.UnSelectedMember(a1.Id, Convert.ToInt32(lbBills.SelectedValue));// fetch data and bind it to unselectmember listbox
             lbMembers.DataBind();
 
         }
@@ -48,14 +48,14 @@ namespace myFairShare_WebApp
         {
             if (lbSelectedMember.SelectedValue != "")
             {
-                Bill.RemovePayee(Convert.ToInt32(lbSelectedMember.SelectedValue), Convert.ToInt32(lbBills.SelectedValue));
+                Bill.RemovePayee(Convert.ToInt32(lbSelectedMember.SelectedValue), Convert.ToInt32(lbBills.SelectedValue)); // remove payee from the bill
                 lbBills_SelectedIndexChanged(Button1, EventArgs.Empty);
             }
         }
 
         protected void btn_Logout(object sender, EventArgs e)
         {
-            FormsAuthentication.SignOut();
+            FormsAuthentication.SignOut(); // sign out the page 
             FormsAuthentication.RedirectToLoginPage();
         }
 

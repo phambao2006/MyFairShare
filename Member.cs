@@ -41,7 +41,7 @@ namespace myFairShare_WebApp
         }
 
 
-        public static void StoreData(string name,double income,int id) 
+        public static void StoreData(string name,double income,int id) // insert data into member table
         {//needed for the StoreData function to operate on webpages
             string sql = "INSERT INTO Member (Name,Income,AcctId) VALUES(@Name, @Income, @AcctId);";
             SqlCommand Command = new SqlCommand(sql, Client.connection);//establishes sql connection
@@ -53,7 +53,7 @@ namespace myFairShare_WebApp
             Command.Connection.Close();
         }
 
-        public static double Getincome(int memberid)
+        public static double Getincome(int memberid) // fetch income of a members
         {
             double income = 0 ;
             string sql = "SELECT DISTINCT Member.Income FROM dbo.Member WHERE Memberid =@MemberId;";
@@ -72,7 +72,7 @@ namespace myFairShare_WebApp
             Command.Connection.Close();
             return income;
         }
-        public static void UpdatePayment(int memberid, int billid, double amount, double latefee)
+        public static void UpdatePayment(int memberid, int billid, double amount, double latefee) // update payment for each user
         {
             string sql = "UPDATE dbo.Payment SET Amount=@Amount,LateFee=@LateFee WHERE BillId=@BillId AND MemberId=@MemberId;";
             SqlCommand Command = new SqlCommand(sql, Client.connection);//establishes sql connection
@@ -84,7 +84,7 @@ namespace myFairShare_WebApp
             Command.ExecuteNonQuery();
             Command.Connection.Close();
         }
-        public static DataTable GetPayment(int BillId, int MemberId)
+        public static DataTable GetPayment(int BillId, int MemberId) // return amount and late amount of a member
         {
             DataTable data = new DataTable();
             string sql = "SELECT Amount,LateFee FROM dbo.Payment WHERE BillId=@BillId AND MemberId=@MemberId;";
@@ -98,7 +98,7 @@ namespace myFairShare_WebApp
             Command.Connection.Close();
             return data;
         }
-        public static void Paid(int billid, int memberid)
+        public static void Paid(int billid, int memberid) // set members status to paid 
         {
             string sql = "UPDATE Payment SET Paid ='1' WHERE  BillId=@BillId AND MemberId=@MemberId ;";
             SqlCommand Command = new SqlCommand(sql, Client.connection);//establishes sql connection

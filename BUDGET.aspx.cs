@@ -36,18 +36,14 @@ namespace myFairShare_WebApp
             Response.Redirect("HOUSEHOLD.aspx"); //directs to Household page on button click
         }
 
-        protected void SUMMARY_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        protected void GOBACK_Click(object sender, EventArgs e)
+        protected void GOBACK_Click(object sender, EventArgs e) //sign out
         {
             FormsAuthentication.SignOut();
             FormsAuthentication.RedirectToLoginPage();
         }
 
-        protected void lb_bills_SelectedIndexChanged(object sender, EventArgs e)
+        protected void lb_bills_SelectedIndexChanged(object sender, EventArgs e) // fetch unpaid members to the listbox
         {
             txtBox_DueDate.Text = "";
             txtBox_Amount.Text = "";
@@ -58,7 +54,7 @@ namespace myFairShare_WebApp
             int member = data.Tables[0].Rows.Count;
             for (int i = 0; i < member; i++)
             {
-                total += Convert.ToDouble(data.Tables[0].Rows[i]["Income"]);
+                total += Convert.ToDouble(data.Tables[0].Rows[i]["Income"]); //calculate total income
             }
             data = Bill.UnpaidMember(Convert.ToInt32(lb_bills.SelectedValue));
             lbSelectedMember.DataSource = data;
@@ -66,7 +62,7 @@ namespace myFairShare_WebApp
             ViewState["total"] = total;
         }
 
-        protected void lbSelectedMember_SelectedIndexChanged(object sender, EventArgs e)
+        protected void lbSelectedMember_SelectedIndexChanged(object sender, EventArgs e)  // show amount duedate and total to textbox
         {
             DataTable paymentinfo = Member.GetPayment(Convert.ToInt32(lb_bills.SelectedValue), Convert.ToInt32(lbSelectedMember.SelectedValue));
             DataTable data = Bill.GetBill(Convert.ToInt32(lb_bills.SelectedValue));
@@ -95,7 +91,7 @@ namespace myFairShare_WebApp
 
                 latefee = (latefee - billamount) / count;
             }
-            Member.UpdatePayment(Convert.ToInt32(lbSelectedMember.SelectedValue), Convert.ToInt32(lb_bills.SelectedValue), amount, latefee);
+            Member.UpdatePayment(Convert.ToInt32(lbSelectedMember.SelectedValue), Convert.ToInt32(lb_bills.SelectedValue), amount, latefee); //update amount and lateamount
             double total = amount + latefee;
             txtBox_DueDate.Text = duedate;
             txtBox_Amount.Text = amount.ToString("F");
@@ -104,7 +100,7 @@ namespace myFairShare_WebApp
 
         }
 
-        protected void lb_bills_PreRender(object sender, EventArgs e)
+        protected void lb_bills_PreRender(object sender, EventArgs e) //add latebill to listbox
         {
 
             int num = 0;
@@ -119,7 +115,7 @@ namespace myFairShare_WebApp
             }
             for (int i = 0; i < num; i++)
             {
-                lb_bills.Items[i].Attributes.CssStyle.Add("background-color", "#FFB6C1");
+                lb_bills.Items[i].Attributes.CssStyle.Add("background-color", "#FFB6C1"); // highlight late bill
             }
             if (!IsPostBack)
             {
@@ -132,23 +128,23 @@ namespace myFairShare_WebApp
                     ListItem item = new ListItem();
                     item.Text = Convert.ToString(data.Rows[i]["Name"]);
                     item.Value = Convert.ToString(data.Rows[i]["BillId"]);
-                    lb_bills.Items.Add(item);
+                    lb_bills.Items.Add(item); // add to listbox
                 }
 
             }
         }
 
-        protected void btnPay_Click(object sender, EventArgs e)
+        protected void btnPay_Click(object sender, EventArgs e) // user make payment
         {
-            if (lb_bills.SelectedValue != "" && txtBox_Amount.Text != "" && lbSelectedMember.SelectedValue != "") 
+            if (lb_bills.SelectedValue != "" && txtBox_Amount.Text != "" && lbSelectedMember.SelectedValue != "")  
             {
-                Bill.UpdateBalance(Convert.ToInt32(lb_bills.SelectedValue), Convert.ToDouble(txtTotal.Text));
+                Bill.UpdateBalance(Convert.ToInt32(lb_bills.SelectedValue), Convert.ToDouble(txtTotal.Text)); // update balance after user paid
                 Member.Paid(Convert.ToInt32(lb_bills.SelectedValue), Convert.ToInt32(lbSelectedMember.SelectedValue));
                 lb_bills_SelectedIndexChanged(Button1, EventArgs.Empty);
             }
             if (lbSelectedMember.Items.Count == 0) 
             {
-                Page.Response.Redirect(Page.Request.Url.ToString(), false);
+                Page.Response.Redirect(Page.Request.Url.ToString(), false); // removed bill after all members had paid
             }
         }
     }

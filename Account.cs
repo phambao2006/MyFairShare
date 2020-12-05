@@ -9,10 +9,11 @@ using System.Web;
 
 namespace myFairShare_WebApp
 {
-    public class Account
+    public class Account // Account Class
     {
+        //property of Account class
         private int id;
-        private string username;
+        private string username;  
         private string password;
         private string question1;
         private string answer1;
@@ -59,11 +60,11 @@ namespace myFairShare_WebApp
         }
 
 
-         public static Boolean UsernameisTaken(string username)
+         public static Boolean UsernameisTaken(string username) // Validatate if Username already exist
          {
             bool Usernameistaken; 
-            string sql = "SELECT Username FROM Account WHERE Username =@Username ; ";
-            SqlCommand Command = new SqlCommand(sql, Client.connection);
+            string sql = "SELECT Username FROM Account WHERE Username =@Username ; ";//query statement
+            SqlCommand Command = new SqlCommand(sql, Client.connection);//establishes sql connection
             Command.Parameters.AddWithValue("@Username", username);
             Command.Connection.Open();
             using (SqlDataReader dbReader = Command.ExecuteReader())
@@ -78,7 +79,7 @@ namespace myFairShare_WebApp
          }
 
 
-        public static void StoreData(string username, string password, string question1, string answer1,string question2, string answer2)
+        public static void StoreData(string username, string password, string question1, string answer1,string question2, string answer2) // Store data into database account table
         {
             string sql = "INSERT INTO Account (Username,Password,Question1,Answer1,Question2,Answer2) VALUES(@Username, @Password, @Question1,@Answer1, @Question2,@Answer2);";
             SqlCommand Command = new SqlCommand(sql, Client.connection);
@@ -94,7 +95,7 @@ namespace myFairShare_WebApp
         }
 
 
-        public static int Login(string username, string password)
+        public static int Login(string username, string password)  // Login security function let user with correct username and password access budget page 
         {
             int id = -1;
             string sql = "SELECT AcctId FROM Account WHERE Username =@Username AND Password =@Password ; ";
@@ -115,7 +116,7 @@ namespace myFairShare_WebApp
             return id;
         }
 
-        public static DataTable VerifyAccount(string username)
+        public static DataTable VerifyAccount(string username) // verify user name in forgot password page to display the question they picked when they registered
         {
             DataTable data = new DataTable();
             string sql = "SELECT AcctId,Question1,Answer1,Question2,Answer2 FROM Account WHERE Username =@Username;";
@@ -129,7 +130,7 @@ namespace myFairShare_WebApp
             return data;
         }
 
-        public static void Resetpassword(string username, string password)
+        public static void Resetpassword(string username, string password) // reset the password 
         {
             string sql = "UPDATE Account SET Password=@Password WHERE  Username=@Username;";
             SqlCommand Command = new SqlCommand(sql, Client.connection);

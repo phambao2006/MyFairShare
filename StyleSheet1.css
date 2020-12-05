@@ -69,6 +69,18 @@
     font-family: 'Roboto', sans-serif;
 }
 
+#text-center1 {
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #98ff98;
+    padding: 10px;
+    height: 450px;
+    width: 650px;
+    margin-left: 350px;
+    font-family: 'Roboto', sans-serif;
+}
+
 #text-center-frontpage {
     position: absolute;
     border-radius: 10px;
@@ -109,27 +121,42 @@
 
 .removebtn {
     position: absolute;
-    top: 210px;
+    top: 305px;
     right: 260px;
 }
 
 .addbtn {
     position: absolute;
-    top: 270px;
+    top: 240px;
     right: 260px;
 }
 .billlist {
     position: absolute;
-    top: 10px;
+    top: 40px;
     right:252px;
 }
 .selectedmemberlist {
     position: absolute;
-    top: 183px;
+    top: 220px;
     right: 68px;
 }
 .memberlist {
     position: absolute;
-    top: 183px;
+    top: 220px;
     right: 450px;
+}
+.memberlabel {
+    position: absolute;
+    top: 190px;
+    right: 497px;
+}
+.billlabel {
+    position: absolute;
+    top: 10px;
+    right: 315px;
+}
+.payeelabel {
+    position: absolute;
+    top: 190px;
+    right: 125px;
 }

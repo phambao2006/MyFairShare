@@ -30,7 +30,7 @@ namespace myFairShare_WebApp
             }
             else 
             {
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('ILLEGAL TRESPASSING CONTACT SUPPORT FOR MORE DETAILS')", true);
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('ILLEGAL TRESPASSING CONTACT SUPPORT FOR MORE DETAILS')", true); // alert for tresspassing without answer security question
             }
         }
     }

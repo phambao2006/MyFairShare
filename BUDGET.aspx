@@ -19,7 +19,7 @@
         <asp:Button ID="Button1" runat="server" OnClick="HOUSEHOLD_Click" Text="HOUSEHOLD" TabIndex="1" BackColor="Black" BorderColor="#00CC00" BorderWidth="3px" Font-Size="Large" ForeColor="White" Height="40px" Width="135px"  CssClass="buttonINbar" />
         <asp:Button ID="Button2" runat="server" OnClick="BILLS_Click" Text="BILLS" TabIndex="2" BackColor="Black" BorderColor="#00CC00" BorderWidth="3px" Font-Size="Large" ForeColor="White" Height="40px" Width="135px"  CssClass="buttonINbar"/>
         <asp:Button ID="button_GOBACK" runat="server" OnClick="GOBACK_Click" Text="Logout" TabIndex="7" BackColor="Black" BorderColor="#00CC00" BorderWidth="3px" Font-Bold="False" Font-Size="Large" ForeColor="White" Height="40px" Width="135px"  CssClass="buttonINbar"/>
-        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/SUPPORT.aspx" Target="_blank" TabIndex="8" BackColor="Black" BorderColor="#00CC00" BorderWidth="3px" Font-Size="Large" ForeColor="White" Height="40px" Width="135px"  CssClass="buttonINbar">Need help?</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/SUPPORT.aspx" Target="_blank" TabIndex="8" BackColor="Black" BorderColor="#00CC00" BorderWidth="3px" Font-Size="Large" ForeColor="White" Height="27px" Width="134px"  CssClass="buttonINbar">Need help?</asp:HyperLink>
         <br />
     </div>
     <asp:Image ID="Image1" runat="server" Height="138px" ImageUrl="~/Images/Logo.png" Width="155px" />
@@ -29,9 +29,11 @@
             <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
             <tr>
                 <td>
-                    &nbsp;</td>
+                    <asp:Label ID="Label4" runat="server" Font-Bold="True" Text="Bills"></asp:Label>
+                </td>
                 <td>
-                    &nbsp;</td>
+                    <asp:Label ID="Label5" runat="server" Font-Bold="True" Text="Payee"></asp:Label>
+                </td>
                 <td>
                     <asp:Label ID="Label3" runat="server" Font-Bold="True" Text="PAYMENT SUMMARY"></asp:Label>
                 </td>

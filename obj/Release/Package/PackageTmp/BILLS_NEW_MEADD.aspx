@@ -49,7 +49,7 @@
             <tr>
                 <td class="auto-style2">
                     &nbsp;<asp:Label ID="Label3" style="float: left; text-align: right;margin-left:145px;" runat="server" Text="Due Date:"></asp:Label>&nbsp;
-                    <asp:TextBox ID="txtBox_DueDate"  style="margin-right: 145px; float:right;" runat="server" TabIndex="3"></asp:TextBox>
+                    <asp:TextBox ID="txtBox_DueDate"  style="margin-right: 145px; float:right;" runat="server" TabIndex="3" TextMode="Date" Width="150px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="Validation_DueDate" runat="server" ControlToValidate="txtBox_DueDate" ErrorMessage="*Required " ForeColor="Red"></asp:RequiredFieldValidator>
                     <br />
                 </td>

@@ -33,15 +33,15 @@ namespace myFairShare_WebApp
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AddPayee.aspx");
+            Response.Redirect("AddPayee.aspx"); //takes user back to AddPayee page
         }
 
-        protected void Button3_Click(object sender, EventArgs e)
+        protected void Button3_Click(object sender, EventArgs e) // ????
         {
 
         }
 
-        protected void btn_Logout_Click(object sender, EventArgs e)
+        protected void btn_Logout_Click(object sender, EventArgs e)// sign out
         {
             FormsAuthentication.SignOut();
             FormsAuthentication.RedirectToLoginPage();

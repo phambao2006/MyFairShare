@@ -34,6 +34,9 @@
         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="&lt;&lt;Remove" TabIndex="1" BackColor="Black" BorderColor="#00CC00" BorderWidth="3px" Font-Size="Large" ForeColor="White" CssClass="removebtn" Height="40px" Width="135px" />
         <asp:Button ID="Button1" runat="server" Text="Add&gt;&gt;" OnClick="Button1_Click" TabIndex="2" BackColor="Black" BorderColor="#00CC00" BorderWidth="3px" Font-Size="Large" ForeColor="White" CssClass="addbtn" Height="40px" Width="135px" />
         <asp:ListBox ID="lbSelectedMember"  style="width:150px; height:160px;" runat="server" CssClass="selectedmemberlist"></asp:ListBox>
+        <asp:Label ID="Label1" runat="server" CssClass="memberlabel" Font-Bold="True" Text="Members"></asp:Label>
+        <asp:Label ID="Label2" runat="server" CssClass="payeelabel" Font-Bold="True" Text="Payee"></asp:Label>
+        <asp:Label ID="Label3" runat="server" CssClass="billlabel" Font-Bold="True" Text="Bills"></asp:Label>
     </div>
 
 </div>
