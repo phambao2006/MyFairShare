@@ -1,1 +1,2 @@
 # MyFairShare
+The purpose of My Fair Share budgeting app is to allow end users to split bills proportionally based upon individual’s earnings in the overall household income. The reasoning behind this app is to provide a fairer distribution of funds for those who are lower income than their peers and create a surplus of funds that they can then spend on assets and other means of saving. This is achieved by providing a tool that tackles the biggest financial burden couples and roommates share, bills.
