@@ -146,3 +146,40 @@ C:\Users\Bao\source\repos\myFairShare\obj\Debug\MyFairShare.csproj.CopyComplete
 C:\Users\Bao\source\repos\myFairShare\obj\Debug\myFairShare WebApp.dll
 C:\Users\Bao\source\repos\myFairShare\obj\Debug\myFairShare WebApp.pdb
 C:\Users\Bao\source\repos\myFairShare\obj\Debug\MyFairShare.csprojAssemblyReference.cache
+C:\Users\Bao\source\MyFairShare\bin\myFairShare WebApp.dll.config
+C:\Users\Bao\source\MyFairShare\bin\myFairShare WebApp.dll
+C:\Users\Bao\source\MyFairShare\bin\myFairShare WebApp.pdb
+C:\Users\Bao\source\MyFairShare\bin\roslyn\csc.exe
+C:\Users\Bao\source\MyFairShare\bin\roslyn\csc.exe.config
+C:\Users\Bao\source\MyFairShare\bin\roslyn\csc.rsp
+C:\Users\Bao\source\MyFairShare\bin\roslyn\csi.exe
+C:\Users\Bao\source\MyFairShare\bin\roslyn\csi.rsp
+C:\Users\Bao\source\MyFairShare\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Bao\source\MyFairShare\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Bao\source\MyFairShare\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Bao\source\MyFairShare\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Bao\source\MyFairShare\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Bao\source\MyFairShare\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Bao\source\MyFairShare\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Bao\source\MyFairShare\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Bao\source\MyFairShare\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Bao\source\MyFairShare\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Bao\source\MyFairShare\bin\roslyn\System.AppContext.dll
+C:\Users\Bao\source\MyFairShare\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Bao\source\MyFairShare\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Bao\source\MyFairShare\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Bao\source\MyFairShare\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Bao\source\MyFairShare\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Bao\source\MyFairShare\bin\roslyn\vbc.exe
+C:\Users\Bao\source\MyFairShare\bin\roslyn\vbc.exe.config
+C:\Users\Bao\source\MyFairShare\bin\roslyn\vbc.rsp
+C:\Users\Bao\source\MyFairShare\bin\roslyn\VBCSCompiler.exe
+C:\Users\Bao\source\MyFairShare\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Bao\source\MyFairShare\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Bao\source\MyFairShare\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Bao\source\MyFairShare\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Bao\source\MyFairShare\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Bao\source\MyFairShare\obj\Debug\MyFairShare.csproj.CoreCompileInputs.cache
+C:\Users\Bao\source\MyFairShare\obj\Debug\MyFairShare.csproj.CopyComplete
+C:\Users\Bao\source\MyFairShare\obj\Debug\myFairShare WebApp.dll
+C:\Users\Bao\source\MyFairShare\obj\Debug\myFairShare WebApp.pdb

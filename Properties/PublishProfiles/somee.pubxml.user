@@ -149,7 +149,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/04/2020 18:11:55</publishTime>
     </File>
     <File Include="Images/DollarsRain.mp4">
-      <publishTime>12/04/2020 18:11:55</publishTime>
+      <publishTime>12/04/2020 18:42:34</publishTime>
     </File>
     <File Include="Images/Logo.png">
       <publishTime>12/04/2020 18:11:55</publishTime>
