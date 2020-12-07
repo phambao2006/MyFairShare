@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="myfairshareConnectionString-Web.config Connection String" description="myfairshareConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=myfairshare.mssql.somee.com;Initial Catalog=myfairshare;Persist Security Info=True;User ID=phambao2006_SQLLogin_1;Password=z1nrqyw6sj" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Bao\\source\\MyFairShare\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='myfairshareConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

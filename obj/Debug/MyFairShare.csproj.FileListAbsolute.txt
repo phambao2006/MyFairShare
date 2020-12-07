@@ -183,3 +183,4 @@ C:\Users\Bao\source\MyFairShare\obj\Debug\MyFairShare.csproj.CoreCompileInputs.c
 C:\Users\Bao\source\MyFairShare\obj\Debug\MyFairShare.csproj.CopyComplete
 C:\Users\Bao\source\MyFairShare\obj\Debug\myFairShare WebApp.dll
 C:\Users\Bao\source\MyFairShare\obj\Debug\myFairShare WebApp.pdb
+C:\Users\Bao\source\MyFairShare\obj\Debug\MyFairShare.csprojAssemblyReference.cache

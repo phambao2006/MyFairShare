@@ -9,7 +9,7 @@ namespace myFairShare_WebApp
     public class Client
     {
         //this is the sqlconnection Bao made to make things easy
-     public static  SqlConnection connection = new SqlConnection("Server=myfairshare.mssql.somee.com;Database=myfairshare;User id=phambao2006_SQLLogin_1;Password=z1nrqyw6sj");
+     public static  SqlConnection connection = new SqlConnection("Server=198.71.226.2;Database=myfairshares;User id=phambao2006;Password=Cubinti2007!");
 
     }
 }

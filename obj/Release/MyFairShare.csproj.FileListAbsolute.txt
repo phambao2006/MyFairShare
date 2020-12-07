@@ -73,3 +73,4 @@ C:\Users\Bao\source\MyFairShare\obj\Release\MyFairShare.csproj.CoreCompileInputs
 C:\Users\Bao\source\MyFairShare\obj\Release\MyFairShare.csproj.CopyComplete
 C:\Users\Bao\source\MyFairShare\obj\Release\myFairShare WebApp.dll
 C:\Users\Bao\source\MyFairShare\obj\Release\myFairShare WebApp.pdb
+C:\Users\Bao\source\MyFairShare\obj\Release\MyFairShare.csprojAssemblyReference.cache
