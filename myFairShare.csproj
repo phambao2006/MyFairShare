@@ -84,7 +84,10 @@
     <Content Include="Content\Images\Figure6.7.png" />
     <Content Include="FORGOTPASSWORD.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\github-icon-for-resume-24.png" />
+    <Content Include="Images\linkedin.jpg" />
     <Content Include="Images\Logo.png" />
+    <Content Include="Images\photo-min.png" />
     <Content Include="INDEX.aspx" />
     <Content Include="NEWPASSWORD.aspx" />
     <Content Include="REGISTER.aspx" />

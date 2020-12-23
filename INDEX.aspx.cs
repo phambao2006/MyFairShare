@@ -39,6 +39,10 @@ namespace myFairShare_WebApp
             }
         }
 
-
+        protected void btnGuess_Click(object sender, EventArgs e)
+        {
+            Session["Accountinfo"] = new Account(2); // save id for future fetch
+            FormsAuthentication.RedirectFromLoginPage(txtBox_Username.Text, true); // secure login 
+        }
     }
 }

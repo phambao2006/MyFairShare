@@ -5,21 +5,13 @@
 
 /* Style page content */
 .main {
+
     width:100%;/* Same as the width of the sidebar */
     background-color: #3CB371;
     margin: 0px 100px 0px 0px;
 
 }
 
-#dollarVideo {
-    position: fixed;
-    min-height: 100%;
-    min-width: 100%;
-    right: 0;
-    bottom: 0;
-    opacity: 0.2;
-    z-index: -3;
-}
 
 .sidenavbar {
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -36,7 +28,7 @@
 .insidenavbar {
     text-align: center;
     display: inline-block;
-    margin: auto;
+    margin: 0px;
 }
 
 .buttonINbar {
@@ -68,6 +60,18 @@
     margin-left: 350px;
     font-family: 'Roboto', sans-serif;
 }
+#profile {
+    position: absolute;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #98ff98;
+    height: 450px;
+    width: 500px;
+    right: 10px;
+    margin-right: 5%;
+    font-family: 'Roboto', sans-serif;
+}
 
 #text-center1 {
     position: absolute;
@@ -87,9 +91,23 @@
     text-align: center;
     background-color: #98ff98;
     padding: 10px;
-    height: 250px;
-    width: 500px;
+    height: 200px;
+    width: 400px;
     margin-left: 350px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 3;
+}
+
+#description {
+    position: absolute;
+    display:block;
+    border-radius: 10px;
+    background-color: #98ff98;
+    padding: 0px 10px;
+    height: 420px;
+    width: 600px;
+    bottom:15%;
+    margin-left: 250px;
     font-family: 'Roboto', sans-serif;
     z-index: 3;
 }
@@ -97,6 +115,10 @@
 #selectquestion1 {
     width: 96px;
     margin-left: 6px;
+}
+#linkedin
+{
+    padding-right:50px;
 }
 
 .pageTitles {
@@ -150,6 +172,10 @@
     top: 190px;
     right: 497px;
 }
+.center 
+{
+    text-align:center;
+}
 .billlabel {
     position: absolute;
     top: 10px;
@@ -159,4 +185,57 @@
     position: absolute;
     top: 190px;
     right: 125px;
+}
+.profilepicture 
+{
+    position:relative;
+    height:130px;
+    width:auto;
+    border-radius:2%;
+}
+
+@media screen and (min-width: 1681px) {
+    #profile {
+        margin-right: 18%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    #profile {
+        margin-right: 1%;
+    }
+
+    #text-center-frontpage {
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    #description {
+        margin-left: 180px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    #description {
+        width:550px;
+        height:450px;
+        bottom:20%;
+    }
+    #text-center-frontpage {
+        margin-left: 230px;
+    }
+}
+@media screen and (max-width: 1024px) {
+
+    #description {
+        margin-left: 235px;
+    }
+
+    #profile {
+        display: none;
+    }
+
+    #text-center-frontpage {
+        margin-left: 300px;
+    }
 }
